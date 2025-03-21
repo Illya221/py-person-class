@@ -1,7 +1,7 @@
 class Person:
     people = {}  # Dictionary to store instances by name
 
-    def __init__(self, name: int, age: int) -> None:
+    def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = int(age)  # Ensure age is an integer
         Person.people[name] = self  # Store instance by name
